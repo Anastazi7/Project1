@@ -1,2 +1,36 @@
 Леонова Анастаcия
 
+
+     const int rows = 5; 
+     const int cols = 5; 
+     
+     char Matr[rows][cols]; 
+     
+     char bukvL = 'A'; 
+     
+     for (int i = 0; i < rows; i++) 
+     { 
+      for (int j = 0; j < cols; j++) 
+      { 
+       Matr[i][j] = bukvL; 
+       ++bukvL; 
+     
+
+       if (bukvL > 'Z') 
+       { 
+        bukvL = 'A'; 
+       } 
+      } 
+     } 
+     for (int i = 0; i < rows; i++) 
+     { 
+      for (int j = 0; j < cols; j++) 
+      { 
+       std::cout << Matr[i][j] << ' '; 
+      } 
+      std::cout << std::endl; 
+     } 
+     
+     system("pause"); 
+     return 0; 
+    } 
